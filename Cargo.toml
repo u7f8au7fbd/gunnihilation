@@ -1,0 +1,14 @@
+[package]
+name = "gunnihilation"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+bevy = { version = "*", features = ["dynamic_linking"] }
+bevy_infinite_grid = "*"
+bevy_screen_diagnostics = "*"
+
+[profile.dev]
+opt-level = 1
+[profile.dev.package."*"]
+opt-level = 3
