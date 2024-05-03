@@ -60,7 +60,7 @@ pub fn summon(
     let default_fov = 70.53_f32.to_radians(); //デフォルトの垂直視野角70.53度(水平視野角は103度)
     commands
         .spawn((
-            InheritedVisibility::default(),//描画オブジェクト
+            InheritedVisibility::default(), //描画オブジェクト
             Player,
             Camera3dBundle {
                 transform: Transform::from_xyz(0.0, 4.0, 40.0),
